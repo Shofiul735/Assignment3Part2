@@ -368,7 +368,7 @@ span{
     position:  relative;
     padding:  0 10px;
 }
-.protImgLink::before{
+.protImgLink:before{
   content: "";
     position: absolute;
     background-color: #26bfbd;
@@ -380,9 +380,13 @@ span{
     -webkit-transition: all 0.7s ease;
     transform: scale(0);
 }
-.protImgLink:hover::before {
+.protImgLink:hover:before{
     opacity: 0.6;
     transform: scale(0.9);
+}
+.protImgLink:hover ul {
+    opacity: 1;
+
 }
 .protImgLink img{
     width:  100%;
@@ -394,6 +398,10 @@ span{
     left: 50%;
     top: 50%;
     transform:  translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
 }
 .protImgLink ul li{
     display:  inline-block;
@@ -427,14 +435,27 @@ span{
     -webkit-transition: all 0.7s ease;
     transform: scale(0);
 }
-.protImgLink1:hover::before {
+.protImgLink1:hover:before{
+    opacity: 0.6;
     transform: scale(0.9);
+}
+.protImgLink1:hover ul {
+    opacity: 1;
 
 }
 .protImgLink1 img{
     width:  100%;
 }
-.protImgLink1 ul{list-style:  none;text-align:  center;position:  absolute;left: 50%;top: 50%;transform:  translate(-50%,-50%);}
+.protImgLink1 ul{list-style:  none;
+    text-align:  center;
+    position:  absolute;
+    left: 50%;top: 50%;
+    transform:  translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+}
 .protImgLink1 ul li{
     display:  inline-block;
 }
