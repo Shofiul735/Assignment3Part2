@@ -363,10 +363,10 @@ span{
     background-color: #f2f2f2;
 }
 .protImgLink{
-    width:  33.33%;
+    width: 30%;
     float:  left;
     position:  relative;
-    padding:  0 10px;
+    margin: 0 10px;
 }
 .protImgLink:before{
   content: "";
@@ -418,10 +418,10 @@ span{
     height:  50vh;
 }
 .protImgLink1{
-    width:  33.33%;
+    width: 30%;
     float:  left;
     position:  relative;
-    padding: 0 10px;
+    margin: 0 10px;
 }
 .protImgLink1:before{
  content: "";
